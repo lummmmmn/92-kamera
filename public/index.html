@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>92-Kamera - Camera Rental Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#cameras">Cameras</a></li>
+                <li><a href="#booking">Booking</a></li>
+                <li><a href="#admin-login">Admin Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Welcome to 92-Kamera</h1>
+        <p>Your one-stop solution for renting cameras.</p>
+    </section>
+
+    <section id="cameras">
+        <h2>Our Cameras</h2>
+        <div class="camera-grid">
+            <!-- Sample Camera Item -->
+            <div class="camera-item">
+                <img src="camera1.jpg" alt="Camera 1">
+                <h3>Camera Model 1</h3>
+                <p>Price: $50/day</p>
+                <button>Rent Now</button>
+            </div>
+            <!-- Additional camera items can go here -->
+        </div>
+    </section>
+
+    <section id="booking">
+        <h2>Booking Form</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="camera">Select Camera:</label>
+            <select id="camera" name="camera">
+                <option value="camera1">Camera Model 1</option>
+                <option value="camera2">Camera Model 2</option>
+                <!-- Additional cameras can be listed here -->
+            </select>
+
+            <label for="date">Rental Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <button type="submit">Submit Booking</button>
+        </form>
+    </section>
+
+    <div id="admin-login" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Admin Login</h2>
+            <form>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
